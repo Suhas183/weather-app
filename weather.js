@@ -1,5 +1,3 @@
-const key = 'd7c53952b0ad67d58f584f14f211ec1d';
-
 async function search() {
     const phrase = document.querySelector('input[type="text"]').value;
     const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${phrase}&limit=5&appid=${key}`);
